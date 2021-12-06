@@ -13,11 +13,11 @@ data.plot(kind= 'scatter', x= 'Height', y= 'Weight')
 plt.show()
 #print(data.corr()) #correlation coefficients 
 #change to dataframe variables
-H = pd.DataFrame(data['Height'])
-W = pd.DataFrame(data['Weight'])
+Height = pd.DataFrame(data['Height'])
+Weight = pd.DataFrame(data['Weight'])
 
 #split data to train and test parts 
-x_train, x_test, y_train, y_test = train_test_split(H, W, test_size=0.33)
+x_train, x_test, y_train, y_test = train_test_split(Height, Weight, test_size=0.33)
 
 
 #build the model 
